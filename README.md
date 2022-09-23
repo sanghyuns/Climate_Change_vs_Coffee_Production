@@ -1,17 +1,29 @@
 # Project 4: Climate Change and the Future of Coffee
 
-## Introduction
 
+## Contents:
+- [Introduction](#Introduction)
+- [Problem Statement](#Problem-Statement)
+- [Software Requirements](#Software-Requirements)
+- [Executive Summary](#Executive-Summary)
+- [Recommendations & Conclusions](#Reccomendations-&-Conclusions)
+- [Limitations & Future Prospect](#Limitations-&-Future-Prospect)
+- [Data Dictionary](#Data-Dictionary)
+
+## Introduction
 
 With its inviting aroma and caffeine content, millions of people around the world start their day off with a cup of joe. More than 2 billion cups of coffee are consumed per day around the globe. Our team has been invited by marketing teams from several coffee brands to investigate the feasibility of continuation of coffee sales. With what seems to be a nonstop global warming and increase in climate variability, the companies seek to confirm the effects of climate change on coffee production in 4 countries that produce the most coffee in the world.
 
-According to the International Coffee Organization, high climate variability has said to be the main factor responsible for fluctuations in coffee yield year to year in the world. The leading contribution toward climate variability comes from global warming, and it is expected to result in shifts in location and the way coffee may be produced in the future. Coffee is also the 2nd largest traded commodity in the world and drastic changes to its production and distribution could lead to much larger scale problems around the globe.
+According to the International Coffee Organization, in the last 30 years, growing demand for coffee has led to a 60% increase in production. In addition, high climate variability is said to be the main factor responsible for fluctuations in coffee yield year to year in the world. The leading contribution toward climate variability comes from global warming, and it is expected to result in shifts in location and the way coffee may be produced in the future. Coffee is also the 2nd largest traded commodity in the world and drastic changes to its production and distribution could lead to much larger scale problems around the globe.
 
-
+There is a continuation of growth in interest in lab grown coffee, led by Finland. They have successfully produced coffee cells in an attempt to eliminate the need for deforestation and lower the water footpring, but is limited to steep funding required to pursue more aggressively.
 
 ## Problem Statement
 
 Does climate change impact coffee production and retail price of coffee?
+
+## Software requirements
+- 
 
 ## Executive Summary
 
@@ -39,13 +51,17 @@ However production rate did seem to have an affect on USA retail price, as all c
 
 As there was no overfitting in the model with production predicting USA retail price, we decided to break that model down into individual countries. Brazil was the highest producing country by almost 100 million lbs (128 million total in 2019). This led us to believe that Brazil would be the best indiviual predictor of USA retail price, as they're the largest contributor. That turned out to not be the case, with Indonesia was the best individual predictor. Brazil had a training score of 0.289 (29%) and testing score of 0.344 (34%) while Indonesia had a training score of 0.353 (35%) and a testing score of  0.534 (53%). This was suprising as Indonesia produced 25 million lbs of coffee in 2019, over 100 million lbs less than Brazil, meaning they contributed far less than Brazil to the world's coffee supply. We looked production levels back to 1990 for both counties to see if Indonesia had been a higher producer in the past. This would possibly explain why Indonesia was a better predictor. This was not the case either as Brazil has always (since 1990) had higher produciton levels.
 
+## Recommendations/Conclusions
+
+We recommend the following to the marketing teams:
+    - There seems to be a growing interest in lab grown coffee in Finland. It would be ideal to  allocate more resources into research so that coffee production isn't as reliant on climate as it currently is. 
+    - Promote sustainability by offering steeper discounts. Since the 
+    - Robusta coffee is more temperature tolerable, but comes with a bitter taste
+    
 ## Limitations/Future Prospect
 
-## Recommendations/Conclusions
-- Audience: marketing teams of major coffee companies
-    - lab grown coffee: allocate more resources into research
-    - promote sustainability by offering steeper discounts 
-    - Robusta coffee is more temperature tolerable, but comes with a bitter taste
+
+
 ## Data Dictionary
 
 | Name                           | Type     | Description |                    
