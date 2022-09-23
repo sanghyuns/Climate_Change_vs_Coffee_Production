@@ -3,6 +3,7 @@
 
 ## Contents:
 - [Introduction](#Introduction)
+- [Data Acquisition](#Data-Acquisition)
 - [Problem Statement](#Problem-Statement)
 - [Software Requirements](#Software-Requirements)
 - [Executive Summary](#Executive-Summary)
@@ -12,18 +13,31 @@
 
 ## Introduction
 
-With its inviting aroma and caffeine content, millions of people around the world start their day off with a cup of joe. More than 2 billion cups of coffee are consumed per day around the globe. Our team has been invited by marketing teams from several coffee brands to investigate the feasibility of continuation of coffee sales. With what seems to be a nonstop global warming and increase in climate variability, the companies seek to confirm the effects of climate change on coffee production in 4 countries that produce the most coffee in the world.
+With its inviting aroma and caffeine content, millions of people around the world start their day off with a cup of joe. More than 2 billion cups of coffee are consumed per day around the globe. Our team has been invited by marketing teams from several coffee brands to investigate the feasibility of continuation of coffee sales. With what seems to be a nonstop global warming and increase in climate variability, the companies seek to confirm the effects of climate change on coffee production in 4 countries that produce the most coffee in the world. They also seek to find out if it affects the retail price of coffee.
 
-According to the International Coffee Organization, in the last 30 years, growing demand for coffee has led to a 60% increase in production. In addition, high climate variability is said to be the main factor responsible for fluctuations in coffee yield year to year in the world. The leading contribution toward climate variability comes from global warming, and it is expected to result in shifts in location and the way coffee may be produced in the future. Coffee is also the 2nd largest traded commodity in the world and drastic changes to its production and distribution could lead to much larger scale problems around the globe.
+According to the International Coffee Organization, in the last 30 years, growing demand for coffee has led to a 60% increase in production. On the contrary, high climate variability is said to be the main factor responsible for fluctuations in coffee yield year to year in the world. The leading contribution toward climate variability comes from global warming, and it is expected to result in shifts in location and the way coffee may be produced in the future. Coffee is the 2nd largest traded commodity in the world and drastic changes to its production and distribution could lead to much larger scale problems around the globe. It is expected that by 2050, there will be a reduction in area suitable for coffee cultivation, according to the Intergovernmental Panel on Climate Change Fifth Assessment Report released in 2014.
 
-There is a continuation of growth in interest in lab grown coffee, led by Finland. They have successfully produced coffee cells in an attempt to eliminate the need for deforestation and lower the water footpring, but is limited to steep funding required to pursue more aggressively.
+There is a continuation of growth in interest in lab grown coffee, led by Finland. They have successfully produced coffee cells in an attempt to eliminate the need for deforestation and lower the water footpring, but is limited by steep funding required to pursue more aggressively.
+
+## Data Acquisition
+
+We imported our data from several different sources:
+- https://www.kaggle.com/code/firefortysix/geospatial-viz-of-global-coffee-production-in-2020/data
+- https://www.kaggle.com/datasets/sevgisarac/temperature-change
+- https://www.ico.org/new_historical.asp?section=Statistics
+
+Once the data was imported, we selected key features that we wanted to include in our analysis, then replaced the null values as we see fit. This ended up deducing our dataframes down to the year and the country's features such as production or temperature. We then merged the entire team's dataframes together to form our final dataset used for modeling and further analysis.
 
 ## Problem Statement
 
 Does climate change impact coffee production and retail price of coffee?
 
 ## Software requirements
-- 
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+- Sklearn
 
 ## Executive Summary
 
@@ -53,14 +67,14 @@ As there was no overfitting in the model with production predicting USA retail p
 
 ## Recommendations/Conclusions
 
-We recommend the following to the marketing teams:
-    - There seems to be a growing interest in lab grown coffee in Finland. It would be ideal to  allocate more resources into research so that coffee production isn't as reliant on climate as it currently is. 
+We recommend the following:
     - Promote sustainability by offering steeper discounts. Since the 
     - Robusta coffee is more temperature tolerable, but comes with a bitter taste
+     - There seems to be a growing interest in lab grown coffee in Finland. It would be ideal to  allocate more resources into research so that coffee production isn't as reliant on climate as it currently is. 
     
 ## Limitations/Future Prospect
 
-
+Some of the limitations of our analysis included lack of knowledge toward a time-series model. Also, there are many factors that contribute to the retail price that us as consumers see in stores other than climate/temperature change which our model does not take into consideration, such as the importing percentages from different countries, various contracts between ways of transportation etc. Our models also only predict the retail price, but it is known that a rise in temperature leads to change in quality of the coffee beans. It may be in our interest to somehow include that in our next analysis, but is limited to its subjective nature.
 
 ## Data Dictionary
 
@@ -87,17 +101,3 @@ We recommend the following to the marketing teams:
 | col_avg_temp_celsius           | float64  | Average temperature of Columbia
 | b_annual_celsius_change        | float64  | Annual change in temperature in Brazil
 | e_avg_temp                     | float64  | Average temperature in Ethiopia
-
-#### notes
-- 2 main coffee plants - coffea arabica(~80%), Coffea canephora, known as Robusta coffee (~20%) 
-     - arabica tastes better, but robusta has higher caffeine content
-http://www.coffeeresearch.org/agriculture/coffeeplant.htm
-
-- Seems like the average temperature across the countries we explored are still in the ideal range of temperature to grow coffee successfully - might want to include in the presentation our prediction on which year the temperature will start to be out of that range using the temp change column
-
-- A warming climate could also exacerbate pests. A 2011 study reported that the coffee berry borer, Hypothenemus hampei, appeared to be thriving under warming conditions.
-https://www.climate.gov/news-features/climate-and/climate-coffee
-
-- In the last 30 years, growing demand for coffee has led to a 60% increase in production, according to the International Coffee Organization.
-
-- Continuous exposure to temperatures up to and just over 86°F (30°C) can severely damage coffee plants, stunting growth, yellowing leaves, even spawning stem tumors.
