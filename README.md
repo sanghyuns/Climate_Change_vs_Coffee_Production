@@ -7,7 +7,7 @@
 - [Problem Statement](#Problem-Statement)
 - [Software Requirements](#Software-Requirements)
 - [Executive Summary](#Executive-Summary)
-- [Recommendations & Conclusions](#Reccomendations/Conclusions)
+- [Recommendations & Conclusions](#Recommendations/Conclusions)
 - [Limitations & Future Prospect](#Limitations-&-Future-Prospect)
 - [Data Dictionary](#Data-Dictionary)
 
