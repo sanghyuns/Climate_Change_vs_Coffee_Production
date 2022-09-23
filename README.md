@@ -25,6 +25,8 @@ We imported our data from several different sources:
 - https://www.kaggle.com/code/firefortysix/geospatial-viz-of-global-coffee-production-in-2020/data
 - https://www.kaggle.com/datasets/sevgisarac/temperature-change
 - https://www.ico.org/new_historical.asp?section=Statistics
+- https://climateknowledgeportal.worldbank.org/download-data
+- https://www.fao.org/faostat/en/#data/QCL
 
 Once the data was imported, we selected key features that we wanted to include in our analysis, then replaced the null values as we see fit. This ended up deducing our dataframes down to the year and the country's features such as production or temperature. We then merged the entire team's dataframes together to form our final dataset used for modeling and further analysis.
 
@@ -68,9 +70,9 @@ As there was no overfitting in the model with production predicting USA retail p
 ## Recommendations
 
 We recommend the following:
-    - Promote sustainability by offering steeper discounts. Since the 
-    - Robusta coffee is more temperature tolerable, but comes with a bitter taste
-     - There seems to be a growing interest in lab grown coffee in Finland. It would be ideal to  allocate more resources into research so that coffee production isn't as reliant on climate as it currently is. 
+- Promote sustainability by offering steeper discounts
+- Pursue Robusta coffee as itis more temperature tolerable, but comes with a bitter taste
+- There seems to be a growing interest in lab grown coffee in Finland. It would be ideal to  allocate more resources into research so that coffee production isn't as reliant on climate as it currently is. 
     
 ## Limitations & Future Prospect
 
