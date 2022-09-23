@@ -7,7 +7,7 @@
 - [Problem Statement](#Problem-Statement)
 - [Software Requirements](#Software-Requirements)
 - [Executive Summary](#Executive-Summary)
-- [Recommendations/Conclusions](#Recommendations/Conclusions)
+- [Recommendations](#Recommendations)
 - [Limitations & Future Prospect](#Limitations-&-Future-Prospect)
 - [Data Dictionary](#Data-Dictionary)
 
@@ -65,14 +65,14 @@ However production rate did seem to have an affect on USA retail price, as all c
 
 As there was no overfitting in the model with production predicting USA retail price, we decided to break that model down into individual countries. Brazil was the highest producing country by almost 100 million lbs (128 million total in 2019). This led us to believe that Brazil would be the best indiviual predictor of USA retail price, as they're the largest contributor. That turned out to not be the case, with Indonesia was the best individual predictor. Brazil had a training score of 0.289 (29%) and testing score of 0.344 (34%) while Indonesia had a training score of 0.353 (35%) and a testing score of  0.534 (53%). This was suprising as Indonesia produced 25 million lbs of coffee in 2019, over 100 million lbs less than Brazil, meaning they contributed far less than Brazil to the world's coffee supply. We looked production levels back to 1990 for both counties to see if Indonesia had been a higher producer in the past. This would possibly explain why Indonesia was a better predictor. This was not the case either as Brazil has always (since 1990) had higher produciton levels.
 
-## Recommendations/Conclusions
+## Recommendations
 
 We recommend the following:
     - Promote sustainability by offering steeper discounts. Since the 
     - Robusta coffee is more temperature tolerable, but comes with a bitter taste
      - There seems to be a growing interest in lab grown coffee in Finland. It would be ideal to  allocate more resources into research so that coffee production isn't as reliant on climate as it currently is. 
     
-## Limitations/Future Prospect
+## Limitations & Future Prospect
 
 Some of the limitations of our analysis included lack of knowledge toward a time-series model. Also, there are many factors that contribute to the retail price that us as consumers see in stores other than climate/temperature change which our model does not take into consideration, such as the importing percentages from different countries, various contracts between ways of transportation etc. Our models also only predict the retail price, but it is known that a rise in temperature leads to change in quality of the coffee beans. It may be in our interest to somehow include that in our next analysis, but is limited to its subjective nature.
 
